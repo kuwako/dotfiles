@@ -258,6 +258,8 @@ alias fnd='find ./ | xargs grep -n --color=always '
 alias fndl='find ./ | grep -v "storage" |xargs grep -n --color=always'
 alias swp='find ./ | grep -E "*.swp" | xargs rm -f'
 alias loge='tail -f -n 100 storage/logs/error.log'
+alias tm='tmux'
+alias tma='tmux attach-session -t 0' 
 
 ########################################
 # OS 別の設定
@@ -274,3 +276,6 @@ case ${OSTYPE} in
 esac
 
 # vim:set ft=zsh:
+
+########################################
+bindkey -r '^S' # Ctrl-s
