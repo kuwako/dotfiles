@@ -5,7 +5,7 @@ syntax on
 
 highlight LineNr ctermfg=darkyellow    " 行番号
 highlight NonText ctermfg=darkgrey
-highlight Folded ctermfg=blue
+highlight Folded ctermfg=black
 highlight SpecialKey cterm=underline ctermfg=darkgrey
 "highlight SpecialKey ctermfg=grey " 特殊記号
 
