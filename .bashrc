@@ -34,3 +34,5 @@ alias logl='tail -f -n 100 storage/logs/laravel.log'
 if [ "$PS1" ]; then
     exec /bin/zsh
 fi
+
+export PATH="$PATH:$HOME/rvm/bin" # Add RVM to PATH for scripting

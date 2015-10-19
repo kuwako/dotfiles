@@ -279,3 +279,5 @@ esac
 
 ########################################
 bindkey -r '^S' # Ctrl-s
+
+export PATH="$PATH:$HOME/rvm/bin" # Add RVM to PATH for scripting
