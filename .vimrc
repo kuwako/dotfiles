@@ -205,6 +205,7 @@ NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'everzet/phpfolding.vim'
 NeoBundle 'gregsexton/gitv.git'
 NeoBundle 'FuzzyFinder'
+NeoBundle 'fatih/vim-go'
 
 filetype plugin on
 filetype indent on
@@ -268,3 +269,10 @@ let g:yankround_max_history = 50
 nnoremap <silent>g<C-p> :<C-u>CtrlPYankRound<CR>
 " }}}
 nnoremap s <C-w>
+
+""go-vim
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+autocmd FileType go :highlight goErr cterm=bold ctermfg=214
+autocmd FileType go :match goErr /\<err\>/

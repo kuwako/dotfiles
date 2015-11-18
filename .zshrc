@@ -92,6 +92,7 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 ########################################
 # 環境変数
 export LANG=ja_JP.UTF-8
+export GOPATH=${HOME}/go
 
 
 # 色を使用出来るようにする
