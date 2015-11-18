@@ -191,9 +191,9 @@ NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'davidoc/taskpaper.vim'
 NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'altercation/vim-colors-solarized'
-NeoBundle 'git://git.wincent.com/command-t.git'
+" NeoBundle 'git://git.wincent.com/command-t.git'
 NeoBundle 'surround.vim'
-NeoBundle 'http://svn.macports.org/repository/macports/contrib/mpvim/'
+" NeoBundle 'http://svn.macports.org/repository/macports/contrib/mpvim/'
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'yegappan/mru'
 NeoBundle "tyru/caw.vim.git"
@@ -220,6 +220,10 @@ NeoBundle 'Shougo/vimproc', {
       \    },
       \ }
 "vimproc自動アップデート
+
+NeoBundleLazy 'fatih/vim-go', {
+            \ 'autoload' : { 'filetypes' : 'go'  }
+            \ }
 
 "Fuzzyfinder
 
