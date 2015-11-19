@@ -196,7 +196,7 @@ NeoBundle 'surround.vim'
 " NeoBundle 'http://svn.macports.org/repository/macports/contrib/mpvim/'
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'yegappan/mru'
-NeoBundle "tyru/caw.vim.git"
+NeoBundle "tyru/caw.vim.gitfiletype"
 " NeoBundle 'Townk/vim-autoclose'
 NeoBundle 'LeafCage/yankround.vim'
 NeoBundle 'kien/ctrlp.vim'
@@ -206,6 +206,9 @@ NeoBundle 'everzet/phpfolding.vim'
 NeoBundle 'gregsexton/gitv.git'
 NeoBundle 'FuzzyFinder'
 NeoBundle 'fatih/vim-go'
+NeoBundle 'tomasr/molokai'
+NeoBundle 'ujihisa/unite-colorscheme'
+
 
 filetype plugin on
 filetype indent on
@@ -280,3 +283,5 @@ let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
 autocmd FileType go :highlight goErr cterm=bold ctermfg=214
 autocmd FileType go :match goErr /\<err\>/
+
+nmap ,c :Unite colorscheme -auto-preview<CR>
