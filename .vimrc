@@ -7,6 +7,10 @@ highlight LineNr ctermfg=darkyellow    " 行番号
 highlight NonText ctermfg=darkgrey
 highlight Folded ctermfg=black
 highlight SpecialKey cterm=underline ctermfg=darkgrey
+hi Pmenu ctermbg=darkBlue
+hi PmenuSel ctermbg=6
+hi PmenuSbar ctermbg=2
+hi PmenuThumb ctermfg=3
 "highlight SpecialKey ctermfg=grey " 特殊記号
 
 " 全角スペースを視覚化
