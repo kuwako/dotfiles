@@ -92,6 +92,7 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 ########################################
 # 環境変数
 export LANG=ja_JP.UTF-8
+export GOPATH=${HOME}/go
 
 
 # 色を使用出来るようにする
@@ -256,6 +257,8 @@ alias gcm='git commit -m'
 alias gpl='git pull upstream '
 alias gps='git push origin '
 alias glog='git log '
+alias gdif='git diff'
+alias vps='ssh kuwako@153.126.179.119'
 alias fnd='find ./ | xargs grep -n --color=always '
 alias fndl='find ./ | grep -v "storage" |xargs grep -n --color=always'
 alias swp='find ./ | grep -E "*.swp" | xargs rm -f'

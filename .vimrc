@@ -7,6 +7,10 @@ highlight LineNr ctermfg=darkyellow    " 行番号
 highlight NonText ctermfg=darkgrey
 highlight Folded ctermfg=black
 highlight SpecialKey cterm=underline ctermfg=darkgrey
+hi Pmenu ctermbg=darkBlue
+hi PmenuSel ctermbg=6
+hi PmenuSbar ctermbg=2
+hi PmenuThumb ctermfg=3
 "highlight SpecialKey ctermfg=grey " 特殊記号
 
 " 全角スペースを視覚化
@@ -191,12 +195,12 @@ NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'davidoc/taskpaper.vim'
 NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'altercation/vim-colors-solarized'
-NeoBundle 'git://git.wincent.com/command-t.git'
+" NeoBundle 'git://git.wincent.com/command-t.git'
 NeoBundle 'surround.vim'
-NeoBundle 'http://svn.macports.org/repository/macports/contrib/mpvim/'
+" NeoBundle 'http://svn.macports.org/repository/macports/contrib/mpvim/'
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'yegappan/mru'
-NeoBundle "tyru/caw.vim.git"
+NeoBundle "tyru/caw.vim.gitfiletype"
 " NeoBundle 'Townk/vim-autoclose'
 NeoBundle 'LeafCage/yankround.vim'
 NeoBundle 'kien/ctrlp.vim'
@@ -205,6 +209,10 @@ NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'everzet/phpfolding.vim'
 NeoBundle 'gregsexton/gitv.git'
 NeoBundle 'FuzzyFinder'
+NeoBundle 'fatih/vim-go'
+NeoBundle 'tomasr/molokai'
+NeoBundle 'ujihisa/unite-colorscheme'
+
 
 filetype plugin on
 filetype indent on
@@ -219,6 +227,10 @@ NeoBundle 'Shougo/vimproc', {
       \    },
       \ }
 "vimproc自動アップデート
+
+NeoBundleLazy 'fatih/vim-go', {
+            \ 'autoload' : { 'filetypes' : 'go'  }
+            \ }
 
 "Fuzzyfinder
 
@@ -268,3 +280,12 @@ let g:yankround_max_history = 50
 nnoremap <silent>g<C-p> :<C-u>CtrlPYankRound<CR>
 " }}}
 nnoremap s <C-w>
+
+""go-vim
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+autocmd FileType go :highlight goErr cterm=bold ctermfg=214
+autocmd FileType go :match goErr /\<err\>/
+
+nmap ,c :Unite colorscheme -auto-preview<CR>
