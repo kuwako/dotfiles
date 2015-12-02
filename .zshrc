@@ -247,6 +247,7 @@ alias cdd='cd /home/kuwako/dev/dekita'
 alias sengoku='cd /home/sengoku/dev/kirei_kaigi/ '
 alias sand='cd /home/h-takeo/dev/sandbox'
 alias sandpull='sudo git pull http://kuwako@gitlab.leverages.net:12480/beauty/kirei_kaigi.git development'
+alias cdb="cd ~/dev/baito/app/"
 alias x='exit'
 alias g='git'
 alias ga='git add -i'
