@@ -7,10 +7,10 @@ highlight LineNr ctermfg=darkyellow    " 行番号
 highlight NonText ctermfg=darkgrey
 highlight Folded ctermfg=black
 highlight SpecialKey cterm=underline ctermfg=darkgrey
-hi Pmenu ctermbg=darkBlue
-hi PmenuSel ctermbg=6
-hi PmenuSbar ctermbg=2
-hi PmenuThumb ctermfg=3
+highlight Pmenu ctermbg=yellow
+highlight PmenuSel ctermbg=6
+highlight PmenuSbar ctermbg=2
+highlight PmenuThumb ctermfg=3
 "highlight SpecialKey ctermfg=grey " 特殊記号
 
 " 全角スペースを視覚化
@@ -200,7 +200,7 @@ NeoBundle 'surround.vim'
 " NeoBundle 'http://svn.macports.org/repository/macports/contrib/mpvim/'
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'yegappan/mru'
-NeoBundle "tyru/caw.vim.gitfiletype"
+NeoBundle "tyru/caw.vim.git"
 " NeoBundle 'Townk/vim-autoclose'
 NeoBundle 'LeafCage/yankround.vim'
 NeoBundle 'kien/ctrlp.vim'
@@ -257,16 +257,13 @@ call neobundle#end()
  "nnoremap d "_d
  nnoremap D "_D
 
-nmap <Leader>c <Plug>(caw:i:toggle)
-vmap <Leader>c <Plug>(caw:i:toggle)
-
 " phpunitを実行する
 nmap ,t :!phpunit
 set whichwrap=b,s,<,>,[,]
 set viminfo='20,\"2000
 
-nmap <C-K> <Plug>(caw:i:toggle)
-vmap <C-K> <Plug>(caw:i:toggle)
+nmap <C-k> <Plug>(caw:i:toggle)
+vmap <C-k> <Plug>(caw:i:toggle)
 
 " yankround.vim {{{
 "" キーマップ
