@@ -266,6 +266,7 @@ alias swp='find ./ | grep -E "*.swp" | xargs rm -f'
 alias loge='tail -f -n 100 storage/logs/error.log'
 alias tm='tmux'
 alias tma='tmux attach-session -t 0' 
+alias tl='tail -f -n 100 '
 
 ########################################
 # OS 別の設定
