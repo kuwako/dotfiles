@@ -7,7 +7,7 @@ highlight LineNr ctermfg=darkyellow    " 行番号
 highlight NonText ctermfg=darkgrey
 highlight Folded ctermfg=black
 highlight SpecialKey cterm=underline ctermfg=darkgrey
-highlight Pmenu ctermbg=yellow
+highlight Pmenu ctermbg=darkblue
 highlight PmenuSel ctermbg=6
 highlight PmenuSbar ctermbg=2
 highlight PmenuThumb ctermfg=3
