@@ -1,5 +1,6 @@
 # Path to your oh-my-zsh installation.
 # export ZSH=/Users/kuwako/.oh-my-zsh
+[[ -f ~/.zsh_local ]] && source ~/.zsh_local
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -240,14 +241,6 @@ fi
 
 alias ..='cd ..'
 alias ...='cd ../..'
-alias stg="ssh -p 8122 development@stg.kirei-kaigi.jp"
-alias cdk='cd /home/kuwako/dev/kirei_kaigi/app'
-alias cdka='cd /home/kuwako/dev/kirei_kaigi/app_admin'
-alias cdd='cd /home/kuwako/dev/dekita'
-alias sengoku='cd /home/sengoku/dev/kirei_kaigi/ '
-alias sand='cd /home/h-takeo/dev/sandbox'
-alias sandpull='sudo git pull http://kuwako@gitlab.leverages.net:12480/beauty/kirei_kaigi.git development'
-alias cdb="cd ~/dev/baito/app/"
 alias x='exit'
 alias g='git'
 alias ga='git add -i'
