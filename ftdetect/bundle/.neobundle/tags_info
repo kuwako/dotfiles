@@ -1,6 +1,6 @@
 FuzzyFinder
 L9
-caw.vim.gitfiletype
+caw.vim
 ctrlp.vim
 gitv
 lightline.vim
@@ -13,7 +13,6 @@ phpfolding.vim
 surround.vim
 taskpaper.vim
 unite-colorscheme
-unite.vim
 vim-colors-solarized
 vim-fugitive
 vim-go
