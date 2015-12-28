@@ -241,8 +241,6 @@ fi
 
 alias ..='cd ..'
 alias ...='cd ../..'
-alias stg="ssh -p 8122 development@stg.baitalk.jp"
-alias stgkk="ssh -p 8122 development@stg.kirei-kaigi.jp"
 alias cdk='cd /home/kuwako/dev/kirei_kaigi/app'
 alias cdka='cd /home/kuwako/dev/kirei_kaigi/app_admin'
 alias cdd='cd /home/kuwako/dev/dekita'
