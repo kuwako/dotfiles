@@ -35,4 +35,4 @@ if [ "$PS1" ]; then
     exec /bin/zsh
 fi
 
-export PATH="$PATH:$HOME/rvm/bin" # Add RVM to PATH for scripting
+# export PATH="$PATH:$HOME/rvm/bin" # Add RVM to PATH for scripting
