@@ -1,11 +1,10 @@
 FuzzyFinder
 L9
 caw.vim
-command-t
 ctrlp.vim
 gitv
 lightline.vim
-mpvim
+molokai
 mru
 neobundle.vim
 neocomplcache
@@ -13,9 +12,10 @@ nerdcommenter
 phpfolding.vim
 surround.vim
 taskpaper.vim
-unite.vim
+unite-colorscheme
 vim-colors-solarized
 vim-fugitive
+vim-go
 vim-quickrun
 vimproc
 yankround.vim

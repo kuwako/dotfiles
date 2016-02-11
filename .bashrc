@@ -8,12 +8,6 @@ alias ll='ls -l'
 alias la='ls -a'
 alias ..='cd ..'
 alias ...='cd ../..'
-alias cdk='cd /home/kuwako/dev/kirei_kaigi/app'
-alias cdka='cd /home/kuwako/dev/kirei_kaigi/app_admin'
-alias cdd='cd /home/kuwako/dev/dekita'
-alias sengoku='cd /home/sengoku/dev/kirei_kaigi/ '
-alias sand='cd /home/h-takeo/dev/sandbox'
-alias sandpull='sudo git pull http://kuwako@gitlab.leverages.net:12480/beauty/kirei_kaigi.git development'
 alias x='exit'
 alias g='git'
 alias ga='git add -i'
@@ -34,3 +28,5 @@ alias logl='tail -f -n 100 storage/logs/laravel.log'
 if [ "$PS1" ]; then
     exec /bin/zsh
 fi
+
+# export PATH="$PATH:$HOME/rvm/bin" # Add RVM to PATH for scripting

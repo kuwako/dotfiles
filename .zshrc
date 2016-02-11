@@ -1,5 +1,6 @@
 # Path to your oh-my-zsh installation.
 # export ZSH=/Users/kuwako/.oh-my-zsh
+[[ -f ~/.zsh_local ]] && source ~/.zsh_local
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -92,6 +93,7 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 ########################################
 # 環境変数
 export LANG=ja_JP.UTF-8
+export GOPATH=${HOME}/go
 
 
 # 色を使用出来るようにする
@@ -239,13 +241,6 @@ fi
 
 alias ..='cd ..'
 alias ...='cd ../..'
-alias stg="ssh -p 8122 development@stg.kirei-kaigi.jp"
-alias cdk='cd /home/kuwako/dev/kirei_kaigi/app'
-alias cdka='cd /home/kuwako/dev/kirei_kaigi/app_admin'
-alias cdd='cd /home/kuwako/dev/dekita'
-alias sengoku='cd /home/sengoku/dev/kirei_kaigi/ '
-alias sand='cd /home/h-takeo/dev/sandbox'
-alias sandpull='sudo git pull http://kuwako@gitlab.leverages.net:12480/beauty/kirei_kaigi.git development'
 alias x='exit'
 alias g='git'
 alias ga='git add -i'
@@ -256,12 +251,15 @@ alias gcm='git commit -m'
 alias gpl='git pull upstream '
 alias gps='git push origin '
 alias glog='git log '
+alias gdif='git diff'
+alias vps='ssh kuwako@153.126.179.119'
 alias fnd='find ./ | xargs grep -n --color=always '
-alias fndl='find ./ | grep -v "storage" |xargs grep -n --color=always'
+alias fndl='find ./ | grep -v "storage" |xargs grep -n --color=always -dskip'
 alias swp='find ./ | grep -E "*.swp" | xargs rm -f'
 alias loge='tail -f -n 100 storage/logs/error.log'
 alias tm='tmux'
 alias tma='tmux attach-session -t 0' 
+alias tl='tail -f -n 100 '
 
 ########################################
 # OS 別の設定
@@ -281,3 +279,5 @@ esac
 
 ########################################
 bindkey -r '^S' # Ctrl-s
+
+# export PATH="$PATH:$HOME/rvm/bin" # Add RVM to PATH for scripting
