@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/home/kuwako/dev/baito'
 let g:netrw_dirhist_2='/home/kuwako/dev/baito/services'
 let g:netrw_dirhist_3='/home/kuwako/dev/baito/services/ElasticSearch'
+let g:netrw_dirhist_4='/home/kuwako/dev/myhubot/scripts'

@@ -54,7 +54,7 @@ plugins=(git)
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # source $ZSH/oh-my-zsh.sh
@@ -93,7 +93,9 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 ########################################
 # 環境変数
 export LANG=ja_JP.UTF-8
-export GOPATH=${HOME}/go
+export GOROOT=${HOME}/go
+export GOPATH=${HOME}/go/packages
+export PATH=$PATH:$GOROOT/bin
 
 
 # 色を使用出来るようにする
@@ -280,4 +282,5 @@ esac
 ########################################
 bindkey -r '^S' # Ctrl-s
 
+export PATH="/usr/local/lib/anaconda2/bin:$PATH"
 # export PATH="$PATH:$HOME/rvm/bin" # Add RVM to PATH for scripting

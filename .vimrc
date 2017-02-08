@@ -212,7 +212,8 @@ NeoBundle 'FuzzyFinder'
 NeoBundle 'fatih/vim-go'
 NeoBundle 'tomasr/molokai'
 NeoBundle 'ujihisa/unite-colorscheme'
-
+NeoBundle 'kchmck/vim-coffee-script'
+NeoBundle 'claco/jasmine.vim'
 
 filetype plugin on
 filetype indent on
