@@ -13,3 +13,6 @@ ln -sf ~/dotfiles/syntax ~/.vim/syntax
 rm ~/dotfiles/ftdetect/ftdetect
 mkdir -p ~/.vim/bundle
 git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
+yum -y install zsh
+$SHELL -l
+
