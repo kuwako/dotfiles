@@ -13,6 +13,9 @@ ln -sf ~/dotfiles/syntax ~/.vim/syntax
 rm ~/dotfiles/ftdetect/ftdetect
 mkdir -p ~/.vim/bundle
 git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
-yum -y install zsh
+sudo yum -y install zsh
+git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zsh_local
+echo 'eval "$(rbenv init -)"' >> ~/.zsh_local
 $SHELL -l
-
+git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
