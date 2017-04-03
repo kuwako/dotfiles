@@ -7,6 +7,9 @@ ln -sf ~/dotfiles/.zshrc ~/.zshrc
 ln -sf ~/dotfiles/.zshenv ~/.zshenv
 ln -sf ~/dotfiles/.oh-my-zsh ~/.oh-my-zsh
 ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
+mkdir ~/.vim
 ln -sf ~/dotfiles/ftdetect ~/.vim/ftdetect
 ln -sf ~/dotfiles/syntax ~/.vim/syntax
 rm ~/dotfiles/ftdetect/ftdetect
+mkdir -p ~/.vim/bundle
+git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
