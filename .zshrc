@@ -246,7 +246,6 @@ fi
 
 alias ..='cd ..'
 alias ...='cd ../..'
-alias x='exit'
 alias g='git'
 alias ga='git add -i'
 alias gst='git status'
