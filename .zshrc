@@ -1,6 +1,5 @@
 # Path to your oh-my-zsh installation.
 # export ZSH=/Users/kuwako/.oh-my-zsh
-[[ -f ~/.zsh_local ]] && source ~/.zsh_local
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -212,14 +211,18 @@ bindkey '^N' history-beginning-search-forward
 ########################################
 # エイリアス
 
-alias la='ls -a'
-alias ll='ls -l'
+alias la='ls -ah'
+alias ll='ls -lah'
 
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 
 alias mkdir='mkdir -p'
+
+alias less='less -N'
+
+alias top='top -o CPU'
 
 # sudo の後のコマンドでエイリアスを有効にする
 alias sudo='sudo '
@@ -282,3 +285,5 @@ bindkey -r '^S' # Ctrl-s
 
 export PATH="/usr/local/lib/anaconda2/bin:$PATH"
 # export PATH="$PATH:$HOME/rvm/bin" # Add RVM to PATH for scripting
+
+[[ -f ~/.zsh_local ]] && source ~/.zsh_local
