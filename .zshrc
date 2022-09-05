@@ -92,10 +92,6 @@ export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 ########################################
 # 環境変数
 export LANG=ja_JP.UTF-8
-export GOROOT=${HOME}/go
-export GOPATH=${HOME}/go/packages
-export PATH=$GOROOT/bin:$PATH
-
 
 # 色を使用出来るようにする
 autoload -Uz colors
@@ -286,3 +282,4 @@ export PATH="/usr/local/lib/anaconda2/bin:$PATH"
 # export PATH="$PATH:$HOME/rvm/bin" # Add RVM to PATH for scripting
 
 [[ -f ~/.zsh_local ]] && source ~/.zsh_local
+export PATH=$GOPATH/bin:$PATH

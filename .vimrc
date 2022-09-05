@@ -173,8 +173,6 @@ inoremap <silent> <C-d> <Del>
 inoremap { {}<Left>
 inoremap [ []<Left>
 inoremap ( ()<Left>
-inoremap " ""<Left>
-inoremap ' ''<Left>
 inoremap <> <><Left>
 
 filetype off "ファイルタイプ関連を無効化
